@@ -227,11 +227,14 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="text-left text-gray-200 font-bold">Sign up for my newsletter</h2>
-                    <input class="flex-row py-3 px-4 rounded-xl my-3 mr-2" type="text" placeholder="Enter email adress">
-                    <button
+                    <form name="newsletter" action="" data-netlify="true"
+                    netlify-honeypot="bot-field" method="POST" >
+                    <input class="flex-row py-3 px-4 rounded-xl my-3 mr-2" type="text" name="email" placeholder="Enter email adress">
+                    <input class="hidden" name="bot-field" />
+                    <button type="submit"
                         class="bg-yellow-300 text-gray-800 font-bold py-3 px-4 rounded-xl transition duration-300 hover:bg-yellow-200">Sign
                         up</button>
+                    </form>
                 </div>
         </div>
     </footer>
