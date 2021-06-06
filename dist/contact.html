@@ -121,18 +121,20 @@
                             </svg>
                             <h2 class="font-bold text-xl text-gray-800 pb-4">Get in touch</h2>
                         </div>
-                        <form class="font-medium tracking-wide" action="">
+                        <form name="contact" class="font-medium tracking-wide" netlify-honeypot="bot-field" method="POST" action="">
                             <label class="ml-1" for="">Email</label>
-                            <input class="w-full py-3 px-4 border-2 border-gray-100 shadow-sm rounded-xl my-3 mr-2"
+                            <input id="email" class="w-full py-3 px-4 border-2 border-gray-100 shadow-sm rounded-xl my-3 mr-2"
                                 type="email" placeholder="Enter your email adress">
                             <label class="ml-1" for="">Interested in</label>
-                            <input class="w-full py-3 px-4 border-2 border-gray-100 shadow-sm rounded-xl my-3 mr-2"
+                            <input id="interested" class="w-full py-3 px-4 border-2 border-gray-100 shadow-sm rounded-xl my-3 mr-2"
                                 type="text" placeholder="Tell me what you're interested in">
-
                             <label class="ml-1" for="">Message</label>
-                            <textarea class="w-full py-3 px-4 border-2 border-gray-100 shadow-sm rounded-xl my-3 mr-2"
+                            <textarea id="message" class="w-full py-3 px-4 border-2 border-gray-100 shadow-sm rounded-xl my-3 mr-2"
                                 name="" id="" cols="30" rows="5" placeholder="Type your message here"></textarea>
-                            <button
+
+                                <input class="hidden" name="bot-field" />
+
+                            <button type="submit"
                                 class="bg-yellow-300 text-gray-800 font-bold py-3 px-4 rounded-xl transition duration-300 hover:bg-yellow-200">Send
                                 message
                             </button>
