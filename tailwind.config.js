@@ -1,10 +1,8 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './dist/index.html',
-    './dist/about.html',
-    './dist/projects.html',
-    './dist/contact.html'
+    './dist/*.html',
+    './dist/js/*.js'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
